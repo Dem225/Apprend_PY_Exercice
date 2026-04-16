@@ -1,0 +1,36 @@
+List of format codes
+Le tableau ci-dessous présente tous les codes que vous pouvez transmettre à la strftime()méthode.
+
+Directif	Signification	Exemple
+%a	Nom abrégé du jour de la semaine.	Dim., Lun., ...
+%A	Nom complet du jour de la semaine.	Dimanche, lundi, ...
+%w	Jour de la semaine sous forme décimale.	0, 1, ..., 6
+%d	Jour du mois sous forme décimale complétée par des zéros.	01, 02, ..., 31
+%-d	Jour du mois sous forme décimale.	1, 2, ..., 30
+%b	Nom du mois en abrégé.	Janv., févr., ..., déc.
+%B	Nom complet du mois.	Janvier, février, ...
+%m	Mois sous forme de nombre décimal complété par des zéros.	01, 02, ..., 12
+%-m	Le mois sous forme décimale.	1, 2, ..., 12
+%y	Année sans siècle, sous forme de nombre décimal complété par des zéros.	00, 01, ..., 99
+%-y	Année sans siècle, exprimée en nombre décimal.	0, 1, ..., 99
+%Y	Année avec le siècle sous forme décimale.	2013, 2019, etc.
+%H	Heure (format 24 heures) sous forme de nombre décimal complété par des zéros.	00, 01, ..., 23
+%-H	L'heure (format 24 heures) sous forme décimale.	0, 1, ..., 23
+%I	Heure (horloge de 12 heures) sous forme de nombre décimal complété par des zéros.	01, 02, ..., 12
+%-I	L'heure (format 12 heures) sous forme décimale.	1, 2, ... 12
+%p	AM ou PM de la région.	AM, PM
+%M	Minute sous forme de nombre décimal complété par des zéros.	00, 01, ..., 59
+%-M	Minute sous forme décimale.	0, 1, ..., 59
+%S	Deuxièmement, sous forme de nombre décimal complété par des zéros.	00, 01, ..., 59
+%-S	Deuxième sous forme de nombre décimal.	0, 1, ..., 59
+%f	La microseconde sous forme de nombre décimal, complétée par des zéros à gauche.	000000 - 999999
+%z	Décalage UTC au format +HHMM ou -HHMM.	 
+%Z	Nom du fuseau horaire.	 
+%j	Jour de l'année sous forme de nombre décimal complété par des zéros.	001, 002, ..., 366
+%-j	Jour de l'année sous forme décimale.	1, 2, ..., 366
+%U	Numéro de la semaine de l'année (le dimanche étant le premier jour de la semaine). Tous les jours de la nouvelle année précédant le premier dimanche sont considérés comme appartenant à la semaine 0.	00, 01, ..., 53
+%W	Numéro de la semaine de l'année (le lundi étant le premier jour de la semaine). Tous les jours de la nouvelle année précédant le premier lundi sont considérés comme appartenant à la semaine 0.	00, 01, ..., 53
+%c	Représentation correcte de la date et de l'heure en fonction des paramètres régionaux.	Lun. 30 sept. 2013 07:06:05
+%x	Représentation appropriée de la date en fonction des paramètres régionaux.	30/09/13
+%X	Représentation temporelle appropriée de la région.	07:06:05
+%%	Un caractère '%' littéral.	%

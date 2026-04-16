@@ -1,0 +1,212 @@
+
+*, *::before, *::after {
+    box-sizing: border-box; /* Force le padding à rester à l'intérieur de la largeur */
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+    position: relative;
+    -webkit-overflow-scrolling: touch; /* Fluidité sur iOS */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- RESET & BASICS --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/* --- HEADER RESPONSIVE --- */
+header {
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap; /* Permet au menu de passer sous le logo si besoin */
+    padding: 10px 5%;
+}
+
+#liste {
+    width: auto;
+    flex-wrap: wrap; /* Pour les petits écrans */
+}
+
+/* --- SECTION BIENVENUE (Héro) --- */
+#bienvenue {
+    height: auto; /* On laisse le contenu décider de la hauteur */
+    min-height: 100vh; /* Prend au moins toute la hauteur de l'écran */
+    padding: 100px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_texte {
+    width: 100%;
+    max-width: 800px; /* Limite la largeur sur grand écran */
+    margin: 0 auto;
+}
+
+.box_case {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+/* --- GRID DES SECTIONS (Impact, Santé, Footer) --- */
+#ACUEIL,footer {
+    height: auto; /* Supprime les hauteurs fixes */
+    flex-wrap: wrap; /* CRITIQUE : passe à la ligne sur mobile */
+    padding: 50px 20px;
+    gap: 20px;
+}
+#Sante{
+     height: auto; /* Deletes fixed hauteurs */
+    flex-wrap: wrap; /* CRITIQUE : passe à la ligne sur mobile */
+    padding: 50px 20px;
+    gap: 20px;
+
+}
+
+.BOX_impacte, .UrGente, .Espace, .flex {
+    width: 100%; /* Par défaut : pleine largeur (mobile) */
+    max-width: 300px; /* Largeur sur PC */
+    min-height: 200px;
+}
+
+/* --- MEDIA QUERIES (Ajustements précis) --- */
+
+/* Tablettes (moins de 992px) */
+@media screen and (max-width: 992px) {
+    .box_case {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .information {
+        width: 100%;
+    }
+    .Espace {
+        max-width: 100%;
+        
+    }
+}/* --- Mobile Mode (600px et moins) --- */
+/* --- Mode Mobile (600px et moins) --- */
+@media screen and (max-width: 600px) {
+    
+    /* 1. Header & Nav */
+    header {
+        height: auto;
+        padding: 20px 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #liste {
+        width: 100%;
+        order: 2;
+        gap: 10px;
+    }
+
+    #Connexions {
+        width: 100%;
+        order: 1; /* Connexion en premier */
+        justify-content: center;
+    }
+
+    /* 2. Section Bienvenue (Héro) */
+    #bienvenue {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .box_texte {
+        width: 100%;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .box_case {
+        width: 95%;
+        flex-direction: column; /* On empile les boutons d'info */
+        height: auto;
+        gap: 15px;
+    }
+
+    /* 3. Sections Santé & Services */
+    #Sante, #ACUEIL {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .UrGente, .Espace, .impacte, .BOX_impacte {
+        width: 100% !important; /* Force la largeur pleine */
+        margin: 10px 0 !important;
+        height: auto !important; /* Annule les hauteurs fixes du mode PC */
+    }
+
+    .flexe_cum {
+        flex-direction: column; /* Empile les boîtes bleues et grises */
+        height: auto;
+    }
+
+    /* 4. Ton bloc spécifique : Boîtes Cum & Titres */
+    .box_flexe_cum,
+    .box_flexe_cum_titre {
+        width: 100% !important;
+        height: auto !important;
+        margin: 10px 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* 5. Urgence Médicale (le bandeau rouge) */
+    #UG_medicale {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .téléphne {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .Appel {
+        width: 100%;
+        max-width: 250px;
+        height: 50px; /* Taille fixe pour le bouton pour qu'il soit beau */
+        justify-content: center;
+        margin: 15px 0 0 0;
+    }
+
+    /* 6. Footer */
+    footer {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .flex {
+        width: 100%;
+        height: auto;
+    }
+}
