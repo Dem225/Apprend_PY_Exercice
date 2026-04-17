@@ -1,0 +1,19 @@
+Niveau 1 : Les bases (Simple manipulation)
+Le convertisseur : Crée une fonction celsius_en_fahrenheit(c) qui transforme une température. (Formule : (c * 9/5) + 32).
+Le plus grand : Crée une fonction trouver_max(a, b, c) qui reçoit trois nombres et retourne le plus grand sans utiliser la fonction max() de Python.
+Pair ou Impair : Crée une fonction est_pair(n) qui retourne True si le nombre est pair, et False sinon.
+Niveau 2 : Listes et Boucles (Traitement de données)
+Somme personnalisée : Crée une fonction somme_liste(nombres) qui calcule la somme de tous les éléments d'une liste avec une boucle for.
+Compteur de voyelles : Crée une fonction compter_voyelles(phrase) qui compte combien il y a de voyelles (a, e, i, o, u, y) dans une chaîne de caractères.
+Unicité : Crée une fonction uniques(liste) qui prend une liste avec des doublons et retourne une nouvelle liste avec chaque élément une seule fois (Indice : utilise un set ou une boucle avec un if not in).
+Niveau 3 : Logique et Algorithmes
+Le mot le plus long : Crée une fonction mot_plus_long(phrase) qui prend une phrase (chaîne de caractères) et retourne le mot qui contient le plus de lettres.
+Vérificateur de mot de passe : Crée une fonction password_valide(mdp) qui retourne True si :
+Le mot de passe fait au moins 8 caractères.
+Il contient au moins un chiffre.
+FizzBuzz Fonction : Crée une fonction fizz_buzz(n) qui retourne "Fizz" si n est divisible par 3, "Buzz" si divisible par 5, et "FizzBuzz" si divisible par les deux.
+Niveau Défi (Bonus)
+Analyse de texte : Crée une fonction analyser_texte(texte) qui retourne un dictionnaire contenant :
+Le nombre de mots.
+Le nombre de caractères (sans les espaces).
+Le nombre de phrases (en comptant les points).
