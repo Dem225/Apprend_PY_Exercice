@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Ethereal - Espace Praticien</title>
+    <link rel="stylesheet" href="./mov.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>Clinical Ethereal</h1>
+                <p>SYSTÈME DE TÉLÉMÉDECINE SÉCURISÉ</p>
+            </div>
+
+            <div class="hero-text">
+                <h2>L'excellence clinique par la connectivité.</h2>
+                <p>Accédez à votre espace sécurisé pour coordonner les soins et gérer vos diagnostics avec une précision
+                    optimale.</p>
+            </div>
+
+            <div class="info-card">
+                <h3> Sécurité des Identifiants</h3>
+                <p>Le numéro RPPS est le pivot de votre identité numérique. Son utilisation garantit :</p>
+                <ul>
+                    <li> L'intégrité absolue du secret médical partagé.</li>
+                    <li>La traçabilité conforme aux normes HDS.</li>
+                </ul>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-number">12.4k</span>
+                    <p>TÉLÉCONSULTATIONS CE MOIS</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">AES-256</span>
+                    <p>SÉCURITÉ DE GRADE MÉDICAL</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="header-right">
+                <div class="badge">
+                    CERTIFIÉ HDS & ASIP
+                </div>
+            </header>
+
+            <section class="form-section">
+                <h1>Espace Praticien</h1>
+                <p class="subtitle">Authentification sécurisée RPPS & Professionnelle</p>
+
+                <form>
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label>NUMÉRO RPPS (11 CHIFFRES)</label>
+                            <div class="input-wrapper">
+                                <i class="far fa-id-badge"></i>
+                                <input type="tel" placeholder="10001234567">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>NUMÉRO D'INSCRIPTION CNOM</label>
+                            <div class="input-wrapper">
+                                <i class="far fa-user"></i>
+                                <input type="text" placeholder="Ex: 75/12345">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>SPÉCIALITÉ</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-briefcase-medical"></i>
+                                <select>
+                                    <option value="" disabled selected>Choisir une spécialité...</option>
+                                    <option value="generaliste">Médecine Générale</option>
+                                    <option value="cardiologie">Cardiologie</option>
+                                    <option value="dermatologie">Dermatologie</option>
+                                    <option value="gynecologie">Gynécologie</option>
+                                    <option value="pediatrie">Pédiatrie</option>
+                                    <option value="ophtalmologie">Ophtalmologie</option>
+                                    <option value="psychiatrie">Psychiatrie</option>
+                                    <option value="radiologie">Radiologie</option>
+                                    <option value="chirurgie">Chirurgie Générale</option>
+                                    <option value="anesthesie">Anesthésie-Réanimation</option>
+                                    <option value="neurologie">Neurologie</option>
+                                    <option value="oncologie">Oncologie</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>DATE DE DÉBUT D'ACTIVITÉ</label>
+                            <div class="input-wrapper">
+                                <i class="far fa-calendar-alt"></i>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>LIEU D'EXERCICE PRINCIPAL</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" placeholder="Ville ou CP">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>QUESTION DE SÉCURITÉ</label>
+                            <div class="input-wrapper">
+                                <i class="far fa-question-circle"></i>
+                                <select>
+                                    <option value="" disabled selected>Sélectionner une question...</option>
+                                    <option value="hopital_interne">Quel est le nom du premier hôpital où vous avez été
+                                        interne ?</option>
+                                    <option value="ville_naissance_mere">Quelle est la ville de naissance de votre mère
+                                        ?</option>
+                                    <option value="nom_premier_animal">Quel était le nom de votre premier animal de
+                                        compagnie ?</option>
+                                    <option value="modele_premiere_voiture">Quel était le modèle de votre toute première
+                                        voiture ?</option>
+                                    <option value="lieu_rencontre_conjoint">Dans quelle ville avez-vous rencontré votre
+                                        conjoint ?</option>
+                                    <option value="instituteur_primaire">Quel est le nom de votre instituteur préféré en
+                                        primaire ?</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="upload-zone">
+                        <i class="fas fa-file-upload"></i>
+                        
+                        <p><strong>Copie de la carte CPS ou Diplôme</strong></p>
+                        <span>Glissez-déposez ou cliquez pour parcourir (PDF, JPG - Max 5MB)</span>
+                    </div> -->
+                    
+                    <div class="upload-container">
+                        <label for="file-upload" class="upload-zone">
+                            <i class="fas fa-file-upload"></i>
+                            <p><strong>Copie de la carte CPS ou Diplôme</strong></p>
+                            <span id="file-name">Glissez-déposez ou cliquez pour parcourir (PDF, JPG - Max 5MB)</span>
+
+                            <input type="file" id="file-upload" accept=".pdf, .jpg, .jpeg" style="display: none;">
+                        </label>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <div class="label-row">
+                            <label>MOT DE PASSE PROFESSIONNEL</label>
+                            <a href="" class="forgot-link">OUBLIÉ ?</a>
+                        </div>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="••••••••••••">
+
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        Connexion au portail sécurisé <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="separator">OU S'AUTHENTIFIER VIA</div>
+
+                <div class="auth-options">
+                    <button class="btn-secondary"><i class="fas fa-id-card"></i> Carte CPS</button>
+                    <button class="btn-secondary"><i class="fas fa-fingerprint"></i> Biométrie</button>
+                </div>
+
+                <footer class="form-footer">
+                    <p>Difficulté de connexion ? <a href="#">Assistance Technique 24/7</a></p>
+                    <p class="copyright">© 2024 CLINICAL ETHEREAL - DONNÉES DE SANTÉ PROTÉGÉES (HDS)</p>
+                </footer>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
