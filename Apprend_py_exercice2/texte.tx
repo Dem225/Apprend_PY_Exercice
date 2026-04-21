@@ -1,0 +1,138 @@
+Créer la fonction `inverse_number(n)` qui toma en parametre un entier `n` et retourne un entier `result` correspondant à l 'inverse de `n`.
+
+**Exemples :1**
+
+- `inverse_number(1234) → 4321`
+- `inverse_number(907) → 709`
+
+## Exercice 2
+
+Créer la fonction `is_palindrome(word)` qui prend en paramètre une chaîne de caractères `word` et retourne un booléen indiquant si `word` est un palindrome.
+
+**Exemples :2**
+
+- `is_palindrome("radar") → True`
+- `is_palindrome("python") → False`
+
+## Exercice 3
+
+Créer la fonction `count_words(sentence)` qui prend en paramètre une chaîne de caractères `sentence` et retourne un entier correspondant au nombre de mots contenus dans la phrase.
+
+**Exemples :**
+
+- `count_words("Bonjour tout le monde") → 4`
+- `count_words("Python est puissant") → 3`
+
+Voici 2 exercices un peu plus “réflexion” (moins mécaniques, plus proches de logique algorithmique) :
+
+## Exercice 4
+
+Créer la fonction `remove_duplicates(items)` qui prend en paramètre un tableau `items` et retourne un tableau `result` dans lequel chaque élément apparaît une seule fois.
+
+**Exemples :**
+
+- `remove_duplicates([1, 2, 2, 3, 1, 4]) → [1, 2, 3, 4]`
+- `remove_duplicates(["a", "b", "a", "c", "b"]) → ["a", "b", "c"]`
+
+## Exercice 5
+
+Créer la fonction `find_pair_with_sum(numbers, target)` qui prend en paramètre un tableau `numbers` et un entier `target`, et retourne un tableau contenant deux nombres dont la somme est égale à `target`. Si aucune paire n’existe, retourner `None`.
+
+**Exemples :**
+
+- `find_pair_with_sum([2, 7, 11, 15], 9) → [2, 7]`
+- `find_pair_with_sum([1, 3, 5, 7], 10) → [3, 7]`
+- `find_pair_with_sum([1, 2, 3], 100) → None`
+
+## Exercice 6
+
+Créer la fonction `find_missing_numbers(numbers)` qui prend en paramètre un tableau `numbers` contenant une suite de nombres entiers allant de `1` à `n`, dans laquelle un ou plusieurs nombres peuvent être absents, et retourne un tableau `result` contenant tous les nombres manquants.
+
+**Exemples :**
+
+- `find_missing_numbers([1, 2, 4, 6]) → [3, 5]`
+- `find_missing_numbers([2, 3, 7, 8]) → [1, 4, 5, 6]`
+- `find_missing_numbers([1, 2, 3, 4]) → []`
+
+## Exercice 7
+
+Créer la fonction `rotate_list(numbers, k)` qui prend en paramètre un tableau `numbers` et un entier `k`, et retourne un tableau où les éléments sont décalés vers la droite de `k` positions.
+
+**Exemples :**
+
+* `rotate_list([1, 2, 3, 4, 5], 2) → [4, 5, 1, 2, 3]`
+* `rotate_list([1, 2, 3], 1) → [3, 1, 2]`
+
+## Exercice 8
+
+Créer la fonction `most_frequent(numbers)` qui prend en paramètre un tableau `numbers` et retourne l’élément le plus fréquent.
+
+Examples:
+
+* `most_frequent([1, 2, 2, 3, 3, 3]) → 3`
+* `most_frequent([4, 4, 1, 1, 2]) → 4` *(ou 1 si égalité)*
+
+## Exercice 9
+
+Créer la fonction `are_anagrams(word1, word2)` qui prend deux chaînes et retourne `True` si elles sont des anagrammes.
+
+**Exemples :**
+
+* `are_anagrams("listen", "silent") → True`
+* `are_anagrams("hello", "world") → False`
+
+## Exercice 10
+
+Créer la fonction `merge_sorted(list1, list2)` qui prend deux tableaux triés et retourne un tableau trié fusionné.
+
+**Exemples :**
+
+* `merge_sorted([1, 3, 5], [2, 4, 6]) → [1, 2, 3, 4, 5, 6]`
+* `merge_sorted([1, 2], [3, 4]) → [1, 2, 3, 4]`
+
+## Exercice 11
+
+Créer la fonction `first_unique(numbers)` qui retourne le premier élément qui n’apparaît qu’une seule fois.
+
+**Exemples :**
+
+* `first_unique([1, 2, 2, 3, 3, 4]) → 1`
+* `first_unique([5, 5, 6, 6, 7]) → 7`
+
+## Exercice 12
+
+Créer la fonction `reverse_words(sentence)` qui retourne une phrase avec les mots inversés (pas les lettres).
+
+**Exemples :**
+
+* `reverse_words("Bonjour tout le monde") → "monde le tout Bonjour"`
+* `reverse_words("Python est puissant") → "puissant est Python"`
+
+## Exercice 13
+
+Créer la fonction `product_except_self(numbers)` qui retourne un tableau où chaque élément est le produit de tous les autres sauf lui-même.
+
+**Exemples :**
+
+* `product_except_self([1,2,3,4]) → [24,12,8,6]`
+* `product_except_self([2,3,4]) → [12,8,6]`
+
+## Exercice 14
+
+Créer la fonction `compress_string(s)` qui prend en paramètre une chaîne `s` et retourne une nouvelle chaîne où les caractères consécutifs sont compressés sous la forme `caractère + nombre`.
+
+Si la chaîne compressée n’est pas plus courte, retourner la chaîne originale.
+
+**Exemples :**
+
+* `compress_string("aaabbc") → "a3b2c1"`
+* `compress_string("abc") → "abc"` *(car "a1b1c1" est plus long)*
+
+## Exercice 15
+
+Créer la fonction `digital_root(n)` qui prend en paramètre un entier `n` et retourne le résultat de la somme répétée de ses chiffres jusqu’à obtenir un seul chiffre.
+
+**Exemples :**
+
+* `digital_root(38) → 2` (3+8=11 → 1+1=2)
+* `digital_root(1234) → 1` (1+2+3+4=10 → 1+0=1)

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEALIMAN CLINICAL - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand-logo">
+            ZEBI.CLINIQUE
+        </div>
+        
+        <div class="dr-profile">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=150" alt="Dr Kouassi">
+            <div>
+                <h4>Dr. Kouassi</h4>
+                <p>Praticien Vérifié</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <div class="nav-item active"><i class="fa-solid fa-chart-pie"></i> <span>Tableau de bord</span></div>
+            <div class="nav-item"><i class="fa-solid fa-user-clock"></i> <span>File d'attente</span></div>
+            <div class="nav-item"><i class="fa-solid fa-address-book"></i> <span>Dossiers patients</span></div>
+            <div class="nav-item"><i class="fa-solid fa-sliders"></i> <span>Paramètres</span></div>
+        </nav>
+
+        <button class="btn-action">+ Nouvelle Consultation</button>
+
+        <div class="sidebar-footer">
+            <div class="nav-item"><i class="fa-solid fa-circle-question"></i> <span>Centre d'aide</span></div>
+            <div class="nav-item"><i class="fa-solid fa-right-from-bracket"></i> <span>Déconnexion</span></div>
+        </div>
+    </aside>
+
+    <main class="main-container">
+        <header class="top-bar">
+            <div class="search-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Rechercher un dossier, un acte, un patient...">
+            </div>
+            <div class="header-icons">
+                
+                <span class="online-status">STATUT: EN LIGNE</span>
+            </div>
+        </header>
+
+        <section class="welcome-header">
+            <span>Tableau de bord</span>
+            <h1>Bonjour, Dr. Kouassi</h1>
+            <p style="color: var(--text-gray); margin-top: 5px;">Vous avez <strong>8 consultations</strong> prévues pour aujourd'hui.</p>
+        </section>
+
+        <div class="dashboard-grid">
+            <div class="left-section">
+                <div class="card">
+                    <div class="card-title"><i class="fa-regular fa-calendar-check"></i> Résumé de la journée</div>
+                    
+                    <div class="consult-row">
+                        <div class="consult-time">09:00</div>
+                        <div class="consult-info">
+                            <h4>Moussa Traoré</h4>
+                            <p>Suivi post-opératoire • Korhogo</p>
+                        </div>
+                        <span class="consult-tag">VIDÉO</span>
+                    </div>
+
+                    <div class="consult-row green">
+                        <div class="consult-time">10:30</div>
+                        <div class="consult-info">
+                            <h4>Awa Koné</h4>
+                            <p>Consultation prénatale • Odienné</p>
+                        </div>
+                        <span class="consult-tag">PRÉSENTIEL</span>
+                    </div>
+
+                    <div class="consult-row gray">
+                        <div class="consult-time">11:15</div>
+                        <div class="consult-info">
+                            <h4>Yao Kouadio</h4>
+                            <p>Renouvellement ordonnance • Korhogo</p>
+                        </div>
+                        <span class="consult-tag">APPEL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="card card-performance">
+                    <div class="card-title" style="color: white; margin-bottom: 30px;">Performance Clinique</div>
+                    
+                    <div class="perf-item">
+                        <div class="perf-header"><span>TAUX DE SATISFACTION</span><span>98%</span></div>
+                        <div class="perf-bar"><div class="perf-fill" style="width: 98%;"></div></div>
+                    </div>
+
+                    <div class="perf-item">
+                        <div class="perf-header"><span>TEMPS MOYEN / PATIENT</span><span>18 MIN</span></div>
+                        <div class="perf-bar"><div class="perf-fill" style="width: 65%;"></div></div>
+                    </div>
+
+                    <div class="stats-boxes">
+                        <div class="s-box"><b>142</b><span>PATIENTS CE MOIS</span></div>
+                        <div class="s-box"><b>12</b><span>URGENCES</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+        :root {
+            --bg-page: #F4F7FB;
+            --sidebar-white: #FFFFFF;
+            --primary-blue: #0A37A3;
+            --secondary-blue: #E8F0FE;
+            --accent-green: #27AE60;
+            --urgent-red: #EB5757;
+            --text-dark: #1A1D23;
+            --text-gray: #828282;
+            --border-light: #F0F0F0;
+            --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.03);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            display: flex;
+            min-height: 100vh;
+            color: var(--text-dark);
+        }
+
+        /* --- SIDEBAR --- */
+        .sidebar {
+            width: 270px;
+            background: var(--sidebar-white);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 35px 25px;
+            position: fixed;
+            border-right: 1px solid var(--border-light);
+            z-index: 100;
+        }
+
+        .brand-logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 45px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dr-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .dr-profile img {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .dr-profile h4 { font-size: 15px; font-weight: 700; }
+        .dr-profile p { font-size: 12px; color: var(--text-gray); }
+
+        .nav-links { list-style: none; flex: 1; }
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 18px;
+            color: var(--text-gray);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 12px;
+            margin-bottom: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item i { font-size: 18px; width: 22px; }
+        .nav-item.active {
+            background: var(--secondary-blue);
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .btn-action {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(10, 55, 163, 0.2);
+        }
+
+        .sidebar-footer { border-top: 1px solid var(--border-light); padding-top: 20px; }
+
+        /* --- MAIN CONTENT --- */
+        .main-container {
+            margin-left: 270px;
+            flex: 1;
+            padding: 30px 60px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .search-wrapper {
+            background: #E8EEF5;
+            padding: 12px 22px;
+            border-radius: 14px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-wrapper input {
+            background: transparent;
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .header-icons { display: flex; align-items: center; gap: 25px; color: var(--text-gray); }
+        .online-status {
+            background: #D4EFDF;
+            color: var(--accent-green);
+            font-size: 11px;
+            font-weight: 800;
+            padding: 6px 14px;
+            border-radius: 8px;
+        }
+
+        .welcome-header { margin-bottom: 35px; }
+        .welcome-header span { color: #BDBDBD; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .welcome-header h1 { font-size: 34px; font-weight: 800; margin-top: 8px; }
+
+        /* --- GRID LAYOUT --- */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        .card-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Liste consultations */
+        .consult-row {
+            display: flex;
+            align-items: center;
+            background: #F9FBFF;
+            padding: 22px;
+            border-radius: 18px;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .consult-row.green { border-left-color: var(--accent-green); }
+        .consult-row.gray { border-left-color: #DDE1E6; }
+
+        .consult-time { width: 85px; font-weight: 800; font-size: 16px; }
+        .consult-info h4 { font-size: 15px; margin-bottom: 4px; }
+        .consult-info p { font-size: 13px; color: var(--text-gray); }
+        .consult-tag {
+            margin-left: auto;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 5px 12px;
+            background: #EDF2F7;
+            border-radius: 6px;
+        }
+
+        /* Carte Performance (Bleue) */
+        .card-performance {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .perf-item { margin-bottom: 25px; }
+        .perf-header { display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; margin-bottom: 10px; opacity: 0.9; }
+        .perf-bar { height: 7px; background: rgba(255,255,255,0.15); border-radius: 10px; }
+        .perf-fill { height: 100%; background: #00D1FF; border-radius: 10px; }
+
+        .stats-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .s-box {
+            background: rgba(255,255,255,0.08);
+            padding: 22px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .s-box b { font-size: 28px; font-weight: 800; display: block; margin-bottom: 5px; }
+        .s-box span { font-size: 10px; font-weight: 700; opacity: 0.6; text-transform: uppercase; }
+
+        /* --- RESPONSIVITY --- */
+        @media (max-width: 1250px) {
+            .dashboard-grid { grid-template-columns: 1fr; }
+            .sidebar { width: 90px; padding: 35px 15px; }
+            .brand-logo, .dr-profile div, .nav-item span, .btn-action, .sidebar-footer span { display: none; }
+            .main-container { margin-left: 90px; padding: 30px; }
+        }
+
+        @media (max-width: 600px) {
+            .main-container { padding: 20px; }
+            .search-wrapper { width: 100%; }
+            .top-bar { flex-direction: column; gap: 20px; align-items: flex-start; }
+            .welcome-header h1 { font-size: 26px; }
+        }
