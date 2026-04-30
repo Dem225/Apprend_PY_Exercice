@@ -1,12 +1,7 @@
 def first_unique(numbers):
    
-    for i in len(numbers):
-        for num in len(numbers):
-            if numbers[i] == numbers[j] :
-                cont+=1
-                mincont=cont        
-            
-                
-        return None
+    for i in numbers:
+        if numbers.count(i)==1:
+            return i
     
-print(first_unique([1, 2, 2, 3, 3, 4]))
+print(first_unique([2, 2, 3,7, 3,2]))
